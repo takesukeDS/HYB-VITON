@@ -1,0 +1,8 @@
+einops
+diffusers==0.24.0
+lpips==0.1.4
+yacs
+kornia
+clean-fid
+accelerate==0.33.0
+transformers==4.38.2

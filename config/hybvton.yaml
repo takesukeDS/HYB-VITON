@@ -1,0 +1,37 @@
+DATASET:
+  SUB_DATASET_NAMES:
+    - 'vitonhd'
+    - 'dresscode'
+  SUB_DATASET_IS_HIGH:
+    - true
+    - true
+  SUB_DATASET_SUFFIX_PERSON:
+    - '_00'
+    - '_0'
+  SUB_DATASET_SUFFIX_CLOTH:
+    - '_00'
+    - '_1'
+  SUB_DATASET_PAIRS_PATH:
+    - 'pairs/train_pairs_hybvton_vitonhd_20240404.txt'
+    - 'pairs/train_pairs_hybvton_dresscode_20240404.txt'
+  SUB_DATASET_PAIRS_PATH_VAL:
+    - 'pairs/val_pairs_hybvton_vitonhd_20240404.txt'
+    - 'pairs/val_pairs_hybvton_dresscode_20240404.txt'
+  ERODE_KERNEL_SIZES:
+    - 21
+    - 11
+  RESIZE_SHAPE:
+    - 512
+    - 384
+  NUM_ERODE_ITERATIONS: 0
+  USE_GT_WARPED_CLOTH: true
+TRAIN:
+  CFG_PROB: 0.1
+  MULTI_CFG: true
+  TRAIN_LORA: true
+  LORA_RANK: 64
+  ZERO_START: true
+  FIND_UNUSED_PARAMETERS: true
+  GRADIENT_AS_BUCKET_VIEW: true
+ENV:
+  MULTI_GPU_TIMEOUT_SEC: 7200
