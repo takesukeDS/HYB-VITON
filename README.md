@@ -2,6 +2,9 @@
 The official implementation of [HYB-VITON](https://arxiv.org/abs/2501.03910). 
 This repository is based on [StableVITON](https://github.com/rlawjdghek/StableVITON).
 
+![comparisons with unpaired setting](assets/hybviton-unpaired_anno.jpg)
+
+
 ## TODO
 - [x] Code for preprocessing
 - [x] Code for training hyb-viton
